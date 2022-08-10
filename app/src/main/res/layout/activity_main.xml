@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_json"
+        android:text="Display Data From Json"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_list_user"
+        android:text="Display List User From API Github"
+        app:layout_constraintTop_toBottomOf="@id/btn_json"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_search_user"
+        app:layout_constraintTop_toBottomOf="@id/btn_list_user"
+        android:text="Display User From Seach API Github"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_seach_repo"
+        app:layout_constraintTop_toBottomOf="@id/btn_search_user"
+        android:text="Display Repository From Search API"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
